@@ -1,0 +1,151 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f6f6f6;
+    color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #fff;
+    background-color: #eaf4fb;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+/* SECTIONS */
+.sections {
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background: #eaf4fb;
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    border-radius: 12px;
+}
+
+.card img {
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.card-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-content h2 {
+    margin-bottom: .5rem;
+}
+
+.card-content p {
+    flex: 1;
+    line-height: 1.6;
+}
+
+.btn {
+    align-self: flex-end;
+    background: #d62828;
+    color: white;
+    border: none;
+    padding: .7rem 1.4rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: #b81f1f;
+}
+
+/* CONTACT */
+.contact {
+    background: white;
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 2rem auto 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact input,
+.contact textarea {
+    padding: .8rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #111;
+    color: white;
+    margin-top: 3rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .btn {
+        align-self: stretch;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
